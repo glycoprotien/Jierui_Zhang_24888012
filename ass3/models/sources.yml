@@ -1,0 +1,12 @@
+sources:
+  - name: raw
+    description: Raw data from CSV files
+    database: postgres
+    schema: raw
+
+    tables:
+      - name: listings
+      - name: NSW_LGA_SUBURB
+      - name: NSW_LGA_CODE
+      - name: CENSUS_G01
+      - name: CENSUS_G02
