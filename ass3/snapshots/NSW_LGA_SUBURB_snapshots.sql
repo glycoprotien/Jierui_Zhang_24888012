@@ -4,11 +4,11 @@
         config(
           target_schema='RAW',
           strategy='timestamp',
-          unique_key='LGA_CODE',
+          unique_key='SUBURB_NAME',
           updated_at='updated_at',
         )
     }}
 
-    select * from {{ source('RAW', 'NSW_LGA_CODE') }}
+    select * from {{ source('RAW', 'NSW_LGA_SUBURB') }}
 
 {% endsnapshot %}
