@@ -5,6 +5,7 @@
           target_schema='raw',
           strategy='timestamp',
           unique_key='LISTING_ID',
+          updated_at: 'updated_at',
           check_cols=['LISTING_ID', 'SCRAPE_ID', 'SCRAPED_DATE', 'HOST_ID',
     'HOST_NAME', 'HOST_SINCE', 'HOST_IS_SUPERHOST', 'HOST_NEIGHBOURHOOD', 'LISTING_NEIGHBOURHOOD',
     'PROPERTY_TYPE','ROOM_TYPE','ACCOMMODATES', 'PRICE','HAS_AVAILABILITY',

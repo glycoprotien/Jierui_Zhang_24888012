@@ -5,6 +5,7 @@
           target_schema='raw',
           strategy='timestamp',
           unique_key='LGA_CODE_2016',
+          updated_at: 'updated_at',
           check_cols=['LGA_CODE_2016',
                     'Tot_P_M',	
                     'Tot_P_F',	
