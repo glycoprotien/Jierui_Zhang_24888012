@@ -4,7 +4,7 @@
         config(
           target_schema='RAW',
           strategy='timestamp',
-          unique_key='id',
+          unique_key='LGA_CODE_2016',
           updated_at='updated_at',
         )
     }}
