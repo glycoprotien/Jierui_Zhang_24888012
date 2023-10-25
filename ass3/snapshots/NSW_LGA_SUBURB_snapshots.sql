@@ -2,13 +2,13 @@
 
 {{
         config(
-          target_schema='raw',
+          target_schema='RAW',
           strategy='timestamp',
           unique_key='SUBURB_NAME',
           updated_at: 'updated_at',
         )
     }}
 
-select * from {{ source('raw', 'NSW_LGA_SUBURB') }}
+select * from {{ source('RAW', 'NSW_LGA_SUBURB') }}
 
 {% endsnapshot %}
