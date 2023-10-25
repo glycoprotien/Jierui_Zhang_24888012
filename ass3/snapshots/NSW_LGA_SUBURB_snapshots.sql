@@ -3,7 +3,7 @@
 {{
         config(
           target_schema='raw',
-          strategy='check',
+          strategy='timestamp',
           unique_key='SUBURB_NAME',
           check_cols=['LGA_NAME',	'SUBURB_NAME'],
         )

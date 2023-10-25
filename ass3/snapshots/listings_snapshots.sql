@@ -3,7 +3,7 @@
 {{
         config(
           target_schema='raw',
-          strategy='check',
+          strategy='timestamp',
           unique_key='LISTING_ID',
           check_cols=['LISTING_ID', 'SCRAPE_ID', 'SCRAPED_DATE', 'HOST_ID',
     'HOST_NAME', 'HOST_SINCE', 'HOST_IS_SUPERHOST', 'HOST_NEIGHBOURHOOD', 'LISTING_NEIGHBOURHOOD',

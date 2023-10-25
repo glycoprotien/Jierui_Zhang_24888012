@@ -3,7 +3,7 @@
 {{
         config(
           target_schema='raw',
-          strategy='check',
+          strategy='timestamp',
           unique_key='LGA_CODE_2016',
           check_cols=['LGA_CODE_2016',
                     'Tot_P_M',	
