@@ -8,5 +8,5 @@
         )
     }}
 
-    SELECT * FROM {{ source('RAW', 'CENSUS_G02') }}
+    SELECT * FROM {{ source('CENSUS_G02') }}
 {% endsnapshot %}

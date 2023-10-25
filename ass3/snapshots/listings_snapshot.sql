@@ -9,6 +9,6 @@
         )
     }}
 
-    select * from {{ source('RAW', 'listings') }}
+    select * from {{ source('listings') }}
 
 {% endsnapshot %}
