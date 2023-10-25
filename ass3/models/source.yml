@@ -1,4 +1,4 @@
-sources:
+source:
   - name: RAW
     description: Raw data from CSV files
     database: postgres
