@@ -1,7 +1,6 @@
 {% snapshot CENSUS_G02_timestamp %}
     {{
         config(
-          target_database='postgres',
           target_schema='RAW',
           strategy='timestamp',
           unique_key='LGA_CODE_2016',
