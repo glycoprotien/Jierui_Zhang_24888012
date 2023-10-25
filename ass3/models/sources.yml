@@ -8,5 +8,5 @@ sources:
       - name: listings
       - name: NSW_LGA_SUBURB
       - name: NSW_LGA_CODE
-      - name: census_g01
-      - name: census_g02
+      - name: CENSUS_G01
+      - name: CENSUS_G02
