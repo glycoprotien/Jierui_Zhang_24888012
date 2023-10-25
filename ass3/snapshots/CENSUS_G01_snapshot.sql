@@ -1,15 +1,15 @@
 {% snapshot CENSUS_G01_timestamp %}
 
-    {{
+{{
         config(
           target_schema='RAW',
           strategy='timestamp',
           unique_key='LGA_CODE_2016',
           updated_at='updated_at',
         )
-    }}
+}}
 
-    select LGA_CODE_2016, Tot_P_M, Tot_P_F,
+select LGA_CODE_2016, Tot_P_M, Tot_P_F,
 Tot_P_P, Age_0_4_yr_M, Age_0_4_yr_F,	Age_0_4_yr_P, Age_5_14_yr_M, 
 Age_5_14_yr_F, Age_5_14_yr_P, Age_15_19_yr_M, Age_15_19_yr_F, 
 Age_15_19_yr_P,	Age_20_24_yr_M,	Age_20_24_yr_F,	Age_20_24_yr_P,	
