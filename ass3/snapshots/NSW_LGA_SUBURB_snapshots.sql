@@ -1,4 +1,4 @@
-{% snapshot brand_snapshot %}
+{% snapshot NSW_LGA_SUBURB_snapshots %}
 
 {{
         config(

@@ -1,4 +1,4 @@
-{% snapshot brand_snapshot %}
+{% snapshot listings_snapshots %}
 
 {{
         config(
