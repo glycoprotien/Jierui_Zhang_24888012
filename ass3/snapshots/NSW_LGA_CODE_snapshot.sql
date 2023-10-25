@@ -9,6 +9,6 @@
         )
     }}
 
-    select * from {{ source('NSW_LGA_CODE') }}
+    select * from {{ source('RAW','NSW_LGA_CODE') }}
 
 {% endsnapshot %}
