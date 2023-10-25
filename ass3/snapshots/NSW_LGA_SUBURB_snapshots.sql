@@ -2,7 +2,7 @@
 
     {{
         config(
-          target_database='postgres'
+          target_database='postgres',
           target_schema='RAW',
           strategy='timestamp',
           unique_key='SUBURB_NAME',
