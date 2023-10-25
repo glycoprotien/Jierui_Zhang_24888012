@@ -4,7 +4,7 @@
         config(
           target_schema='raw',
           strategy='check',
-          unique_key='id',
+          unique_key='SUBURB_NAME',
           check_cols=['LGA_NAME',	'SUBURB_NAME'],
         )
     }}

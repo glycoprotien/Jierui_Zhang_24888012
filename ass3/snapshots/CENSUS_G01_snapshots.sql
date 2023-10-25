@@ -4,7 +4,7 @@
         config(
           target_schema='raw',
           strategy='check',
-          unique_key='id',
+          unique_key='LGA_CODE_2016',
           check_cols=['LGA_CODE_2016',
                     'Tot_P_M',	
                     'Tot_P_F',	
