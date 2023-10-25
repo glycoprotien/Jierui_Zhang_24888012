@@ -6,7 +6,6 @@
           strategy='timestamp',
           unique_key='SUBURB_NAME',
           updated_at: 'updated_at',
-          check_cols=['LGA_NAME',	'SUBURB_NAME'],
         )
     }}
 

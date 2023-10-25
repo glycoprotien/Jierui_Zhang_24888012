@@ -6,7 +6,6 @@
           strategy='timestamp',
           unique_key='LGA_CODE',
           updated_at: 'updated_at',
-          check_cols=['LGA_CODE', 'LGA_NAME'],
         )
     }}
 
