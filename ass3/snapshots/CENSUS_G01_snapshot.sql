@@ -1,4 +1,4 @@
-{% snapshot CENSUS_G01_timestamp %}
+{% snapshot CENSUS_G01 %}
 
 {{
         config(

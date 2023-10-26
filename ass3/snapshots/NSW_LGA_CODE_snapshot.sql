@@ -1,4 +1,4 @@
-{% snapshot NSW_LGA_CODE_timestamp %}
+{% snapshot NSW_LGA_CODE %}
 
 {{
         config(

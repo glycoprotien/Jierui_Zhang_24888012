@@ -1,4 +1,4 @@
-{% snapshot CENSUS_G02_timestamp %}
+{% snapshot CENSUS_G02 %}
 {{
         config(
           target_schema='RAW',

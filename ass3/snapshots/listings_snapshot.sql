@@ -1,4 +1,4 @@
-{% snapshot listings_timestamp %}
+{% snapshot listings %}
 
 {{
         config(
