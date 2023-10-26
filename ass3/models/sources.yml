@@ -1,7 +1,7 @@
 sources:
   - name: raw
     description: Raw data from CSV files
-    database: raw
+    database: postgres
     schema: raw
 
     tables:
