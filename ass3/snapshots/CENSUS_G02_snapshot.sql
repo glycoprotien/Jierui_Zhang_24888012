@@ -1,7 +1,7 @@
 {% snapshot CENSUS_G02_snapshot %}
 {{
         config(
-          target_schema='RAW',
+          target_schema='raw',
           strategy='timestamp',
           unique_key='LGA_CODE_2016',
           updated_at='LGA_CODE_2016'

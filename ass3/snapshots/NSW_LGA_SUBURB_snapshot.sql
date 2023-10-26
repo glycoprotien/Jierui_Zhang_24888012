@@ -2,7 +2,7 @@
 
 {{
         config(
-          target_schema='RAW',
+          target_schema='raw',
           strategy='timestamp',
           unique_key='SUBURB_NAME',
           updated_at='SUBURB_NAME'
