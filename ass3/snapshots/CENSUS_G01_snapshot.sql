@@ -53,6 +53,6 @@ High_yr_schl_comp_Yr_8_belw_P,	High_yr_schl_comp_D_n_g_sch_M,
 High_yr_schl_comp_D_n_g_sch_F,	High_yr_schl_comp_D_n_g_sch_P,	
 Count_psns_occ_priv_dwgs_M,	Count_psns_occ_priv_dwgs_F,	
 Count_psns_occ_priv_dwgs_P,	Count_Persons_other_dwgs_M,	
-Count_Persons_other_dwgs_F,	Count_Persons_other_dwgs_P from {{ source('RAW', 'CENSUS_G01') }}
+Count_Persons_other_dwgs_F,	Count_Persons_other_dwgs_P from {{ source('raw', 'CENSUS_G01') }}
 
 {% endsnapshot %}
