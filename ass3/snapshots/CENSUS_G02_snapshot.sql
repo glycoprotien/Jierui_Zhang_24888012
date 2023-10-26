@@ -1,4 +1,4 @@
-{% snapshot CENSUS_G02 %}
+{% snapshot CENSUS_G02_snapshot %}
 {{
         config(
           target_schema='RAW',

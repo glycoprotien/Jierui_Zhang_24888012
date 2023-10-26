@@ -1,4 +1,4 @@
-{% snapshot CENSUS_G01 %}
+{% snapshot CENSUS_G01_snapshot %}
 
 {{
         config(

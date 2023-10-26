@@ -1,4 +1,4 @@
-{% snapshot NSW_LGA_CODE %}
+{% snapshot NSW_LGA_CODE_snapshot %}
 
 {{
         config(
