@@ -5,8 +5,8 @@ sources:
     schema: RAW
 
     tables:
+      - name: CENSUS_G01
+      - name: CENSUS_G02
       - name: listings
       - name: NSW_LGA_SUBURB
       - name: NSW_LGA_CODE
-      - name: CENSUS_G01
-      - name: CENSUS_G02
