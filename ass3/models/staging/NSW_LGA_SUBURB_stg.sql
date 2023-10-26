@@ -14,8 +14,7 @@ source  as (
 
 renamed as (
     select
-    LGA_NAME,SUBURB_NAME
-        
-        from source
+    *
+    from source
 )
 select * from renamed

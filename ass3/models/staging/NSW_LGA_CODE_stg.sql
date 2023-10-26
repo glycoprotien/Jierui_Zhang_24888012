@@ -14,7 +14,7 @@ source  as (
 
 renamed as (
     select
-    LGA_CODE, LGA_NAME
+    *
         
         from source
 )
