@@ -1,5 +1,5 @@
 sources:
-  - name: ass3
+  - name: raw
     description: Raw data from CSV files
     database: postgres
     schema: RAW
