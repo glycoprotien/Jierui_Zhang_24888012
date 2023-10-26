@@ -5,7 +5,7 @@
           target_schema='RAW',
           strategy='timestamp',
           unique_key='SUBURB_NAME',
-          updated_at='updated_at'
+          updated_at='SUBURB_NAME'
         )
 }}
 
