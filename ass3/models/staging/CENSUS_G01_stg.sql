@@ -60,16 +60,5 @@ Count_psns_occ_priv_dwgs_M,	Count_psns_occ_priv_dwgs_F,
 Count_psns_occ_priv_dwgs_P,	Count_Persons_other_dwgs_M,	
 Count_Persons_other_dwgs_F,	Count_Persons_other_dwgs_P
     from source;
-),
-
-unknown as (
-    select
-        0 as LGA_CODE_2016,
-        'unknown' as brand_description,
-        '1900-01-01'::timestamp  as dbt_valid_from,
-        null::timestamp as dbt_valid_to
-
 )
-select * from unknown
-union all
 select * from renamed

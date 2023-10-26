@@ -30,16 +30,6 @@ renamed as (
     CAST (CASE WHEN REVIEW_SCORES_COMMUNICATION='NAN' THEN '0' ELSE REVIEW_SCORES_COMMUNICATION END AS DECIMAL) AS REVIEW_SCORES_COMMUNICATION,
     CAST (CASE WHEN REVIEW_SCORES_VALUE='NAN' THEN '0' ELSE REVIEW_SCORES_VALUE END AS DECIMAL) AS REVIEW_SCORES_VALUE
     from source;
-),
-
-unknown as (
-    select
-        0 as LISTING_ID,
-        'unknown' as brand_description,
-        '1900-01-01'::timestamp  as dbt_valid_from,
-        null::timestamp as dbt_valid_to
-
 )
-select * from unknown
-union all
+
 select * from renamed
