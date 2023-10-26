@@ -9,6 +9,6 @@
         )
 }}
 
-select LGA_CODE, LGA_NAME from {{ source('raw','NSW_LGA_CODE') }}
+select LGA_CODE, LGA_NAME from {{ source('raw','nsw_lga_code') }}
 
 {% endsnapshot %}
