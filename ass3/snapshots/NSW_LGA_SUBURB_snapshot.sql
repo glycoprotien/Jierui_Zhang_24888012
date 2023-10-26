@@ -9,6 +9,6 @@
         )
 }}
 
-    select LGA_NAME,SUBURB_NAME from {{ source('RAW','NSW_LGA_SUBURB') }}
+    select LGA_NAME,SUBURB_NAME from {{ source('raw','NSW_LGA_SUBURB') }}
 
 {% endsnapshot %}
