@@ -16,6 +16,6 @@ renamed as (
     select
     LGA_CODE, LGA_NAME
         
-        from source;
+        from source
 )
 select * from renamed

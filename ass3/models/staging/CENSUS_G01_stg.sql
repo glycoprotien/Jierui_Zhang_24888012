@@ -59,6 +59,6 @@ High_yr_schl_comp_D_n_g_sch_F,	High_yr_schl_comp_D_n_g_sch_P,
 Count_psns_occ_priv_dwgs_M,	Count_psns_occ_priv_dwgs_F,	
 Count_psns_occ_priv_dwgs_P,	Count_Persons_other_dwgs_M,	
 Count_Persons_other_dwgs_F,	Count_Persons_other_dwgs_P
-    from source;
+    from source
 )
 select * from renamed
