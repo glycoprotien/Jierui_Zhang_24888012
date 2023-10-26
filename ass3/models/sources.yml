@@ -7,6 +7,6 @@ sources:
     tables:
       - name: CENSUS_G01
       - name: CENSUS_G02
-      - name: listings
-      - name: NSW_LGA_SUBURB
+      - name: listings      
       - name: NSW_LGA_CODE
+      - name: NSW_LGA_SUBURB
