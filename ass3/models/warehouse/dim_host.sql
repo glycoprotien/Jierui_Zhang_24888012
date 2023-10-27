@@ -6,5 +6,5 @@
 
 
 
-select cast(LISTING_ID AS DECIMAL), HOST_ID, HOST_NAME, HOST_IS_SUPERHOST, HOST_NEIGHBOURHOOD, HOST_SINCE
+select LISTING_ID, HOST_ID
 from {{ ref('listings_stg') }} 
