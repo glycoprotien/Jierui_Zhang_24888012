@@ -1,7 +1,4 @@
 
-
-
-select
-b.LGA_CODE, b.LGA_NAME, a.SUBURB_NAME
-from {{ ref('NSW_LGA_SUBURB_stg') }} a
-left join {{ ref('NSW_LGA_CODE_stg') }} b on a.LGA_NAME = b.LGA_NAME
+SELECT LGA_NAME, SUBURB_NAME FROM {{ ref('NSW_LGA_SUBURB_stg') }} 
+UNION
+SELECT LGA_NAME, LGA_NAME_CODE FROM {{ ref('NSW_LGA_CODE_stg') }} 
