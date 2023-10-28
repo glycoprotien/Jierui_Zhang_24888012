@@ -15,13 +15,19 @@ source  as (
 renamed as (
     select
         LGA_CODE,
-        LGA_NAME
+        LGA_NAME,
+        CASE
+    WHEN EXTRACT(EPOCH FROM dbt_valid_from)::INT IS NULL THEN '1900-01-01'::TIMESTAMP
+    ELSE dbt_valid_from
+END AS dbt_valid_from,
+    dbt_valid_to
     from source
 ),
 
 unknown as (
     select
         0 as LGA_CODE,
+        NULL as LGA_NAME 
         '1900-01-01'::timestamp  as dbt_valid_from,
         null::timestamp as dbt_valid_to
 
