@@ -28,7 +28,7 @@ unknown as (
     select
         0 as LGA_CODE,
         NULL as LGA_NAME 
-        '1900-01-01'::timestamp  as dbt_valid_from,
+        '1900-01-01'::timestamp as dbt_valid_from,
         null::timestamp as dbt_valid_to
 
 )
