@@ -5,7 +5,7 @@
           target_schema='raw',
           strategy='timestamp',
           unique_key='LISTING_ID',
-          updated_at='LISTING_ID'
+          updated_at='SCRAPED_DATE'
         )
 }}
 
