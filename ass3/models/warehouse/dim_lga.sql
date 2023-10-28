@@ -1,5 +1,10 @@
+{{
+    config(
+        unique_key='LGA_CODE'
+    )
+}}
 
-UPDATE {{ ref('NSW_LGA_SUBURB_stg') }}  AS S
-SET S.LGA_CODE = C.LGA_CODE
-FROM {{ ref('NSW_LGA_CODE_stg') }} AS C
-WHERE S.LGA_NAME = C.LGA_NAME;
+
+
+select LGA_CODE, LGA_NAME 
+from {{ ref('NSW_LGA_CODE_stg') }} 
