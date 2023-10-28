@@ -15,8 +15,8 @@ source  as (
 renamed as (
     select
         LGA_CODE,
-        LGA_NAME
-        case when dbt_valid_from = (select min(dbt_valid_from) from source) then '1900-01-01'::timestamp else dbt_valid_from end as dbt_valid_from,
+        LGA_NAME,
+        CASE WHEN dbt_valid_from IS NULL then '1900-01-01'::timestamp else dbt_valid_from end as dbt_valid_from,
         dbt_valid_to
     from source
 ),

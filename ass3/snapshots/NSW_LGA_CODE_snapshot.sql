@@ -5,7 +5,6 @@
           target_schema='raw',
           strategy='timestamp',
           unique_key='LGA_CODE',
-          updated_at='LGA_CODE'
         )
 }}
 
