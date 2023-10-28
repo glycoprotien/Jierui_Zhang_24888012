@@ -4,13 +4,6 @@
     )
 }}
 
-with
-
-source  as (
-
-    select * from {{ ref('NSW_LGA_CODE_snapshot') }}
-
-),
 
 
-select * from source
+select * from {{ ref('NSW_LGA_CODE_snapshot') }}
