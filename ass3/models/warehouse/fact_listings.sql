@@ -25,15 +25,15 @@ from {{ ref('listings_stg') }})
 
 select 
 a.LISTING_ID,
- a.SCRAPED_DATE,
+a.SCRAPED_DATE,
 a.HOST_ID,
 a.HOST_NAME,
- a.HOST_SINCE,
- a.HOST_IS_SUPERHOST,
+a.HOST_SINCE,
+a.HOST_IS_SUPERHOST,
 a.HOST_NEIGHBOURHOOD,
-b.HOST_NEIGHBOURHOOD_lga_name,
+c.HOST_NEIGHBOURHOOD_lga_name,
 a.LISTING_NEIGHBOURHOOD,
-c.LISTING_NEIGHBOURHOOD_lga_code,
+b.LISTING_NEIGHBOURHOOD_lga_code,
 a.PROPERTY_TYPE,
 a.ROOM_TYPE,
 a.ACCOMMODATES,
@@ -43,5 +43,5 @@ a.AVAILABILITY_30,
 a.REVIEW_SCORES_RATING,
 a.NUMBER_OF_REVIEWS
 from check_dimensions a 
-left join {{ ref('NSW_LGA_CODE_stg') }} c on a.LISTING_NEIGHBOURHOOD = c.lga_name
-left join {{ ref('NSW_LGA_SUBURB_stg') }} b on lower(a.HOST_NEIGHBOURHOOD) = lower(b.SUBURB_NAME)
+left join {{ ref('NSW_LGA_CODE_stg') }} b on a.LISTING_NEIGHBOURHOOD = b.lga_name
+left join {{ ref('NSW_LGA_SUBURB_stg') }} c on lower(a.HOST_NEIGHBOURHOOD) = lower(c.SUBURB_NAME)
