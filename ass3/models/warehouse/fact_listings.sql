@@ -44,5 +44,5 @@ select
     a.REVIEW_SCORES_RATING,
     a.NUMBER_OF_REVIEWS
 from check_dimensions a 
-left join {{ ref('NSW_LGA_CODE_stg') }} c on a.LISTING_NEIGHBOURHOOD = c. LISTING_NEIGHBOURHOOD_lga_code
-left join {{ ref('NSW_LGA_SUBURB_stg') }} b on a.HOST_NEIGHBOURHOOD = b.HOST_NEIGHBOURHOOD_lga_name
+left join {{ ref('NSW_LGA_CODE_stg') }} c on a.LISTING_NEIGHBOURHOOD = c.lga_name
+left join {{ ref('NSW_LGA_SUBURB_stg') }} b on lower(a.HOST_NEIGHBOURHOOD) = lower(b.SUBURB_NAME)
