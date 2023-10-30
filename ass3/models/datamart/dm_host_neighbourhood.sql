@@ -1,3 +1,4 @@
+
 WITH ActiveListings AS (
     SELECT 
         has_availability,
