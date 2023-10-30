@@ -38,4 +38,4 @@ CASE WHEN LAG(inactive_listings) OVER (PARTITION BY listing_neighbourhood ORDER 
     AVG(CASE WHEN has_availability = 't' THEN (30 - availability_30) * price ELSE NULL END) AS estimated_revenue_per_active_listings
 FROM ActiveListings GROUP BY listing_neighbourhood, monthyear) AS subquery
 
-ORDER BY listing_neighbourhood, monthyear;
+ORDER BY listing_neighbourhood, monthyear
