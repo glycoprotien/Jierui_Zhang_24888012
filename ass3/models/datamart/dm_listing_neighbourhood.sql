@@ -11,7 +11,7 @@ WITH ActiveListings AS (
         listing_neighbourhood
     FROM {{ ref('fact_listings') }}  fl
 )
-select   listing_neighbourhood, active_listings_rate, min_price, max_price, median_price, avg_price, 
+select   listing_neighbourhood, monthyear,active_listings_rate, min_price, max_price, median_price, avg_price, 
  distinct_hosts, superhost_rate, avg_review_scores_rating,
 CASE WHEN LAG(active_listings) OVER (PARTITION BY listing_neighbourhood ORDER BY monthyear) = 0 THEN NULL
         ELSE (active_listings - LAG(active_listings) OVER (PARTITION BY listing_neighbourhood ORDER BY monthyear))::NUMERIC / lag(active_listings) OVER (PARTITION BY listing_neighbourhood ORDER BY monthyear)
